@@ -1,5 +1,38 @@
 @import "./reset.scss";
 
 body {
-  background: url("./assets/bg-star.png") no-repeat 15% 15%;
+  background: url("./assets/bg-star.png") no-repeat 20% 25%;
+}
+
+//
+// Colors
+//
+$white: #fff;
+$red: #d7362a;
+
+//
+// Mixins
+//
+@mixin box-shadow($left, $top, $radius, $color) {
+  box-shadow: $left $top $radius $color;
+  -webkit-box-shadow: $left $top $radius $color;
+  -moz-box-shadow: $left $top $radius $color;
+  -ms-box-shadow: $left $top $radius $color;
+  -o-box-shadow: $left $top $radius $color;
+}
+
+@mixin transition($property, $duration, $easing: linear) {
+  transition: $property $duration $easing;
+  -webkit-transition: $property $duration $easing;
+  -moz-transition: $property $duration $easing;
+  -ms-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
 }
