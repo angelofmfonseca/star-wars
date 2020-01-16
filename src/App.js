@@ -1,14 +1,10 @@
 import React from "react";
 
 import "./base.scss";
-import Start from "./pages/start/Start";
+import Routes from "./Routes";
 
 const App = () => {
-  return (
-    <>
-      <Start />
-    </>
-  );
+  return <Routes />;
 };
 
 export default App;
