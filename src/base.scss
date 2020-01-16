@@ -9,16 +9,31 @@ body {
 //
 $white: #fff;
 $red: #d7362a;
+$darkRed: #942801;
+$shadowRed: #520a0a;
+$lightGray: #ccc;
+
+//
+// Fonts
+//
+$avenir: "Avenir";
+$monaco: "Monaco";
 
 //
 // Mixins
 //
-@mixin box-shadow($left, $top, $radius, $color) {
-  box-shadow: $left $top $radius $color;
-  -webkit-box-shadow: $left $top $radius $color;
-  -moz-box-shadow: $left $top $radius $color;
-  -ms-box-shadow: $left $top $radius $color;
-  -o-box-shadow: $left $top $radius $color;
+@mixin box-shadow($left, $top, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $left $top $blur $color;
+    -moz-box-shadow: inset $left $top $blur $color;
+    box-shadow: inset $left $top $blur $color;
+  } @else {
+    box-shadow: $left $top $blur $color;
+    -webkit-box-shadow: $left $top $blur $color;
+    -moz-box-shadow: $left $top $blur $color;
+    -ms-box-shadow: $left $top $blur $color;
+    -o-box-shadow: $left $top $blur $color;
+  }
 }
 
 @mixin transition($property, $duration, $easing: linear) {

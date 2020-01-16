@@ -5,7 +5,7 @@ import "./Button.scss";
 const Button = props => {
   const buttonClass = "btn" + (props.disabled ? " disabled" : "");
   const bgColor = props.bgColor || "#D7362A";
-  const bgColorDisabled = props.bgColorDisabled || "#CCC";
+  const bgColorDisabled = props.bgColorDisabled || "#ccc";
   const buttonStyles = {
     backgroundColor: props.disabled ? bgColorDisabled : bgColor,
     width: props.width || "auto",
@@ -22,7 +22,8 @@ const Button = props => {
     border: "none",
     cursor: "pointer",
     borderRadius: props.borderRadius || "5px",
-    fontSize: props.fontSize || "1.5em"
+    fontSize: props.fontSize || "1.5em",
+    fontFamily: props.fontFamily || "Arial"
   };
   const defaultFunc = () => {
     return;
