@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 
 import "./Game.scss";
 import Card from "../../components/card/Card";
 import Button from "../../components/button/Button";
+import { getPlanet } from "../../stores/actions/planet.actions";
 
 class Game extends Component {
   state = {
@@ -13,6 +15,10 @@ class Game extends Component {
   goToStart = () => {
     this.setState({ redirectToStart: true });
   };
+
+  componentDidMount() {
+    this.props.getPlanet();
+  }
 
   render() {
     if (this.state.redirectToStart) return <Redirect to={"/"} />;
@@ -46,4 +52,12 @@ class Game extends Component {
   }
 }
 
-export default Game;
+export default connect(
+  state => {
+    const planet = state || {};
+    return {
+      planet
+    };
+  },
+  { getPlanet }
+)(Game);
