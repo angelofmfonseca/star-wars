@@ -1,10 +1,6 @@
 @import "../../base.scss";
-.buttonContainer {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 
+.buttonContainer {
   .btn {
     cursor: pointer;
     display: flex;
@@ -21,6 +17,10 @@
     &:active {
       box-shadow: 3px 3px $shadowRed;
       transform: translateY(4px);
+    }
+
+    &:focus {
+      outline: none;
     }
 
     &.disabled {

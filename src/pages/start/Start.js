@@ -12,11 +12,11 @@ const Start = () => {
         <Button
           title="Start"
           width="300px"
-          height="55px"
+          height="45px"
           marginTop="50px"
           borderRadius="3px"
           fontFamily="Avenir Next Condensed"
-          fontSize="2.5rem"
+          fontSize="1.5rem"
         />
       </div>
     </>

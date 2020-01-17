@@ -30,7 +30,7 @@ const Button = props => {
   };
   return (
     <>
-      <div className="buttonContainer">
+      <section className="buttonContainer">
         <button
           type={props.type || "button"}
           className={buttonClass}
@@ -43,7 +43,7 @@ const Button = props => {
         >
           {props.isLoading ? <div className="loading-box"></div> : props.title}
         </button>
-      </div>
+      </section>
     </>
   );
 };
