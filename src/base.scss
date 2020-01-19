@@ -1,5 +1,10 @@
 @import "./reset.scss";
 
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   background: url("./assets/bg-star.png") no-repeat 20% 25%;
 }

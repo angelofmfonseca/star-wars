@@ -19,7 +19,7 @@ export const getPlanet = () => async dispatch => {
   try {
     const response = await Service.getPlanet();
     dispatch(successGetPlanet(response.data));
-    return response.data;
+    return true;
   } catch (err) {
     dispatch(errorGetPlanet(err));
     return;

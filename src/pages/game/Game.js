@@ -54,7 +54,12 @@ class Game extends Component {
 
 export default connect(
   state => {
-    const planet = state || {};
+    const planet =
+      (state &&
+        state.planet &&
+        state.planet.success &&
+        state.planet.success.results) ||
+      {};
     return {
       planet
     };
