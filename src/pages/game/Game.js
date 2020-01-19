@@ -23,10 +23,12 @@ class Game extends Component {
   render() {
     if (this.state.redirectToStart) return <Redirect to={"/"} />;
 
+    const { planet, isLoading } = this.props;
+
     return (
       <>
         <section className="gameArea">
-          <Card />
+          <Card planet={planet} isLoading={isLoading} />
           <Button
             title="Flip Another Card"
             width="300px"
@@ -35,6 +37,7 @@ class Game extends Component {
             borderRadius="3px"
             fontFamily="Avenir Next Condensed"
             fontSize="1.5rem"
+            onClick={this.props.getPlanet}
           />
           <Button
             title="Exit"
@@ -60,8 +63,12 @@ export default connect(
         state.planet.success &&
         state.planet.success.results) ||
       {};
+    const isLoading = state.planet.isLoading;
+    const error = state.planet.error;
     return {
-      planet
+      planet,
+      isLoading,
+      error
     };
   },
   { getPlanet }
