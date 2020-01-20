@@ -9,11 +9,16 @@ import { getPlanet } from "../../stores/actions/planet.actions";
 
 class Game extends Component {
   state = {
-    redirectToStart: false
+    redirectToStart: false,
+    cardIsFlipped: false
   };
 
   goToStart = () => {
     this.setState({ redirectToStart: true });
+  };
+
+  flipCard = () => {
+    this.setState({ cardIsFlipped: !this.state.cardIsFlipped });
   };
 
   componentDidMount() {
@@ -24,20 +29,25 @@ class Game extends Component {
     if (this.state.redirectToStart) return <Redirect to={"/"} />;
 
     const { planet, isLoading } = this.props;
+    const { cardIsFlipped } = this.state;
 
     return (
       <>
         <section className="gameArea">
-          <Card planet={planet} isLoading={isLoading} />
+          <Card
+            planet={planet}
+            isLoading={isLoading}
+            isFlipped={cardIsFlipped}
+          />
           <Button
-            title="Flip Card"
+            title="Flip Another Card"
             width="300px"
             height="45px"
             marginTop="50px"
             borderRadius="3px"
             fontFamily="Avenir Next Condensed"
             fontSize="1.5rem"
-            onClick={this.props.getPlanet}
+            onClick={this.flipCard}
           />
           <Button
             title="Exit"
