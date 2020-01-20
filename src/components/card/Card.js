@@ -12,10 +12,17 @@ const Card = props => {
             <img src={frontCard} alt="random card" className="frontCard" />
           </div>
           <div className="backCard">
-            <span className="cardInfo">Population: </span>
-            <span className="cardInfo">Climate: </span>
-            <span className="cardInfo">Terrain: </span>
-            <span className="cardInfo">Featured in {} movies</span>
+            {console.log(props.planets)}
+            {/* {props.planets.map(planet => {
+              return (
+                <>
+                  <span className="cardInfo">Population: planet.name</span>
+                  <span className="cardInfo">Climate: planet.climate</span>
+                  <span className="cardInfo">Terrain: planet.terrain</span>
+                  <span className="cardInfo">Featured in {} movies</span>
+                </>
+              );
+            })} */}
           </div>
         </div>
       </section>

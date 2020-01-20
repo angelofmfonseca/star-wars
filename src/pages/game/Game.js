@@ -28,14 +28,14 @@ class Game extends Component {
   render() {
     if (this.state.redirectToStart) return <Redirect to={"/"} />;
 
-    const { planet, isLoading } = this.props;
+    const { planets, isLoading } = this.props;
     const { cardIsFlipped } = this.state;
 
     return (
       <>
         <section className="gameArea">
           <Card
-            planet={planet}
+            planets={planets}
             isLoading={isLoading}
             isFlipped={cardIsFlipped}
           />
@@ -67,7 +67,7 @@ class Game extends Component {
 
 export default connect(
   state => {
-    const planet =
+    const planets =
       (state &&
         state.planet &&
         state.planet.success &&
@@ -76,7 +76,7 @@ export default connect(
     const isLoading = state.planet.isLoading;
     const error = state.planet.error;
     return {
-      planet,
+      planets,
       isLoading,
       error
     };
