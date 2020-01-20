@@ -30,7 +30,7 @@ class Game extends Component {
         <section className="gameArea">
           <Card planet={planet} isLoading={isLoading} />
           <Button
-            title="Flip Another Card"
+            title="Flip Card"
             width="300px"
             height="45px"
             marginTop="50px"

@@ -8,9 +8,13 @@ const Card = props => {
   return (
     <>
       <section className="cardContainer">
-        <img src={frontCard} alt="random card" className="frontCard" />
-        <div className="backCard">
-          <img src={backCard} alt="flipped card" className="frontCard" />
+        <div className="card">
+          <div className="frontCard">
+            <img src={frontCard} alt="random card" className="frontCard" />
+          </div>
+          <div className="backCard">
+            <img src={backCard} alt="flipped card" className="frontCard" />
+          </div>
         </div>
       </section>
     </>
