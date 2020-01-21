@@ -19,6 +19,7 @@ class Game extends Component {
 
   flipCard = () => {
     this.setState({ cardIsFlipped: !this.state.cardIsFlipped });
+    this.props.getPlanet();
   };
 
   componentDidMount() {
@@ -40,7 +41,7 @@ class Game extends Component {
             isFlipped={cardIsFlipped}
           />
           <Button
-            title="Flip Another Card"
+            title="Flip Card"
             width="300px"
             height="45px"
             marginTop="50px"
