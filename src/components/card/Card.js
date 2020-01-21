@@ -4,11 +4,11 @@ import "./Card.scss";
 import frontCard from "../../assets/card-planeta-frente.png";
 
 const Card = props => {
-  const { planets } = props;
+  const { planets, isFlipped } = props;
   return (
     <>
       <section className="cardContainer">
-        <div className={`card ${props.isFlipped ? "isFlipped" : ""}`}>
+        <div className={`card ${isFlipped ? "isFlipped" : ""}`}>
           <div className="frontCard">
             <img src={frontCard} alt="random card" className="frontCard" />
           </div>
