@@ -25,7 +25,7 @@ class Start extends Component {
             title="Start"
             width="300px"
             height="45px"
-            marginTop="50px"
+            marginTop="30px"
             borderRadius="3px"
             fontFamily="Avenir Next Condensed"
             fontSize="1.5rem"

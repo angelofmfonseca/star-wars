@@ -3,7 +3,6 @@
 .cardContainer {
   width: 250px;
   height: 300px;
-  border: 2px solid $lightGray;
   @include border-radius(3px);
   perspective: 600px;
 
@@ -30,7 +29,7 @@
 
   .backCard {
     transform: rotateY(180deg);
-    background-color: $lightGray;
+    background-color: $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +37,8 @@
 
     .cardInfo {
       font-size: 1.2rem;
-      padding: 5px;
+      font-family: "Avenir Next Condensed";
+      padding: 20px 10px;
     }
   }
 }
