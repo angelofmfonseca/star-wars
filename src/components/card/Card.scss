@@ -35,10 +35,21 @@
     justify-content: center;
     align-items: flex-start;
 
-    .cardInfo {
-      font-size: 1.2rem;
+    .cardTitle {
+      font-size: 1.4rem;
       font-family: "Avenir Next Condensed";
-      padding: 20px 10px;
+      width: 100%;
+      text-align: center;
+      padding: 0 0 20px;
+      border-bottom: solid $black 3px;
+    }
+
+    .cardInfo {
+      font-size: 1rem;
+      font-family: "Avenir Next Condensed";
+      margin: 0 auto;
+      padding: 17px;
+      border-bottom: solid $lightGray 1px;
     }
   }
 }

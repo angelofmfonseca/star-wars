@@ -22,7 +22,7 @@ class Start extends Component {
         <section className="startArea">
           <img src={logoStarWars} alt="Star Wars game" className="startLogo" />
           <Button
-            title="Start"
+            title="Press Start"
             width="300px"
             height="45px"
             marginTop="30px"

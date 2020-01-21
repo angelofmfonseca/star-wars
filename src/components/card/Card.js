@@ -4,6 +4,7 @@ import "./Card.scss";
 import frontCard from "../../assets/card-planeta-frente.png";
 
 const Card = props => {
+  const { planets } = props;
   return (
     <>
       <section className="cardContainer">
@@ -12,17 +13,14 @@ const Card = props => {
             <img src={frontCard} alt="random card" className="frontCard" />
           </div>
           <div className="backCard">
-            {console.log(props.planets)}
-            {/* {props.planets.map(planet => {
-              return (
-                <>
-                  <span className="cardInfo">Population: planet.name</span>
-                  <span className="cardInfo">Climate: planet.climate</span>
-                  <span className="cardInfo">Terrain: planet.terrain</span>
-                  <span className="cardInfo">Featured in {} movies</span>
-                </>
-              );
-            })} */}
+            <span className="cardTitle">{planets.name}</span>
+            <span className="cardInfo">Population: {planets.population}</span>
+            <span className="cardInfo">Climate: {planets.climate}</span>
+            <span className="cardInfo">Terrain: {planets.terrain}</span>
+            <span className="cardInfo">
+              Featured in {planets && planets.films && planets.films.length}{" "}
+              movies
+            </span>
           </div>
         </div>
       </section>

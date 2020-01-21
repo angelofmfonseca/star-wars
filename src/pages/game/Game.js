@@ -67,12 +67,7 @@ class Game extends Component {
 
 export default connect(
   state => {
-    const planets =
-      (state &&
-        state.planet &&
-        state.planet.success &&
-        state.planet.success.results) ||
-      {};
+    const planets = (state && state.planet && state.planet.success) || {};
     const isLoading = state.planet.isLoading;
     const error = state.planet.error;
     return {
