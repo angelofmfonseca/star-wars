@@ -1,10 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./Card.scss";
 import frontCard from "../../assets/card-planeta-frente.png";
 
 const Card = props => {
   const { planets, isFlipped } = props;
+
   return (
     <>
       <section className="cardContainer">
@@ -26,6 +28,11 @@ const Card = props => {
       </section>
     </>
   );
+};
+
+Card.propTypes = {
+  planets: PropTypes.object.isRequired,
+  isFlipped: PropTypes.bool.isRequired
 };
 
 export default Card;

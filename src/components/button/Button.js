@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./Button.scss";
 
@@ -25,9 +26,11 @@ const Button = props => {
     fontSize: props.fontSize || "1.5em",
     fontFamily: props.fontFamily || "Arial"
   };
+
   const defaultFunc = () => {
     return;
   };
+
   return (
     <>
       <section className="buttonContainer">
@@ -46,6 +49,12 @@ const Button = props => {
       </section>
     </>
   );
+};
+
+Button.propTypes = {
+  title: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired
 };
 
 export default Button;
