@@ -1,3 +1,5 @@
+![B2W - Desafio Front-end](/src/assets/logo-star-wars.png "Star Wars Challenge")
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -44,7 +44,7 @@ const Button = props => {
               : defaultFunc
           }
         >
-          {props.isLoading ? <div className="loading-box"></div> : props.title}
+          {props.isLoading ? <div className="loading-box" /> : props.title}
         </button>
       </section>
     </>
@@ -54,7 +54,20 @@ const Button = props => {
 Button.propTypes = {
   title: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired
+  height: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string.isRequired,
+  marginBottom: PropTypes.string,
+  marginLeft: PropTypes.string,
+  marginTop: PropTypes.string,
+  marginRight: PropTypes.string,
+  paddingBottom: PropTypes.string,
+  paddingLeft: PropTypes.string,
+  paddingRight: PropTypes.string,
+  paddingTop: PropTypes.string,
+  display: PropTypes.string,
+  borderRadius: PropTypes.string,
+  fontSize: PropTypes.string,
+  fontFamily: PropTypes.string
 };
 
 export default Button;
