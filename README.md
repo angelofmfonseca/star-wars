@@ -1,70 +1,49 @@
 ![B2W - Desafio Front-end](/src/assets/logo-star-wars.png "Star Wars Challenge")
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral:
 
-## Available Scripts
+Trata-se de um desafio proposto pela B2W que consiste em um jogo em que são exibidos os dados de um planeta aleatório a ser sorteado dentre os planetas da franquia. Esses dados desse planeta a serem exibidos são o seu clima, o seu terreno, sua população e em quantos filmes da franquia esse planeta apareceu.
 
-In the project directory, you can run:
+A API fornecida para a elaboração do desafio e obtenção dos dados a serem apresentados encontra-se disponível em https://swapi.co/.
 
-### `yarn start`
+## Tecnologias:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- React Router
+- Proptypes
+- Redux
+- Redux-Thunk
+- Axios
+- Javascript
+- SCSS
+- CSS
+- HTML
+- Firebase
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Conforme sugerido no desafio, a aplicação foi desenvolvida com React.js, mas não apenas por se tratar de uma sugestão, mas também pelo fato de Javascript ser a minha linguagem de escolha para me especializar e o ecossistema do React ser a ferramenta com a qual me sinto mais confortável.
 
-### `yarn test`
+Ao longo da aplicação, apareceram duas dúvidas acerca da tecnologia específica a ser utilizada:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pensei em utilizar Next.js, porém optei por não utilizá-lo por se tratar de uma apliação simples que, em princípio, não me parecia fazer uso de SEO.
 
-### `yarn build`
+Outra questão foi quanto à utilização de Redux, pois, em se tratando de um desafio que faria apenas uma requisição à API e somente um trecho da aplicação iria consumir esses dados poderia parecer que não faria sentido o uso da ferramenta, entretanto optei por utilizá-la uma vez que achei o desafio bem interessante, consistindo um ótimo exercício para praticar e decidi dar continuidade, mesmo após entregue o desafio, e exibir os dados dos demais elementos da API, como personagens e naves especiais.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Resultado:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Para conferir o resultado do desafio proposto, basta acessar este link, no qual a aplicação encontra-se hospedada.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Caso deseje baixar a aplicação, será necessário o uso de [Git](https://git-scm.com/) e de [Node.js](https://nodejs.org/en/).
 
-### `yarn eject`
+Abra o Git bash no diretório em que se deseja clocar o projeto e rode o comando:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`git clone <url>`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Com o projeto clonado, rode mais um comando para instalar as dependências do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm install`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Dessa maneira, se terá acesso a todo o projeto e suas dependências. Caso de desejo rodar o projeto, poderá rodar o seguinte comando:
 
-## Learn More
+`npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Dessa maneira, o projeto rodará na porta 3000 ([http://localhost:3000](http://localhost:3000)).
