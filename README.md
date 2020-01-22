@@ -1,4 +1,4 @@
-![B2W - Desafio Front-end](/src/assets/logo-star-wars.png "Star Wars Challenge")
+# Desafio Front-end B2W - Star Wars Challenge
 
 ## Visão Geral:
 
