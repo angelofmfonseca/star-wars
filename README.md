@@ -36,7 +36,7 @@ Caso deseje baixar a aplicação, será necessário o uso de [Git](https://git-s
 
 Abra o Git bash no diretório em que se deseja clocar o projeto e rode o comando:
 
-`git clone <url>`
+`git clone <url-d-aplicacao>`
 
 Com o projeto clonado, rode mais um comando para instalar as dependências do projeto:
 
